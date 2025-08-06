@@ -1,26 +1,24 @@
-# Math Formula Reference ✨  
-### by Ali Zain • © 2025  
+# Math Formula Reference 🧮  
+### by Ali Zain Al-Aabdeen  
 
-[![Live Website](https://img.shields.io/badge/🌐_Live-alizain--math--reference.github.io-brightgreen?style=flat-square)](https://alizain-math-reference.github.io)  
-[![License](https://img.shields.io/badge/📜_License-MIT-blue?style=flat-square)](LICENSE)  
+[![Live Website](https://img.shields.io/badge/🌐_Live-Ali--Zain--al--Aabdeen.github.io-blue?style=flat-square)](https://ali-zain-al-aabdeen.github.io)  
+[![License](https://img.shields.io/badge/📜_License-MIT-green?style=flat-square)](LICENSE)  
 
-![Preview](preview.png)  
+![Website Preview](preview.PNG)  
 
-A **responsive math formula hub** with:  
+A **mobile-friendly** math formula cheatsheet with:  
 - 🔍 Instant search  
-- 📱 Mobile-first design  
-- 📚 Organized tabs (Algebra/Geometry/Calculus)  
+- 📱 Responsive design  
+- 📚 Organized formulas (Algebra/Geometry/Calculus)  
 
-## 🚀 Quick Start  
-1. Visit **[alizain-math-reference.github.io](https://alizain-math-reference.github.io)**  
-2. Use tabs or search to navigate  
+## 🚀 Features  
+| Feature | Description |  
+|---------|-------------|  
+| **Tab System** | Switch between math categories |  
+| **Live Search** | Filters formulas as you type |  
 
-## 🛠️ Tech  
-| File | Purpose |  
-|------|---------|  
-| `index.html` | Core structure |  
-| `style.css` | Responsive styling |  
-| `script.js` | Interactive features |  
+## 🔗 Live Demo  
+➡️ **[https://ali-zain-al-aabdeen.github.io](https://ali-zain-al-aabdeen.github.io)**  
 
----  
-© 2025 [Ali Zain](https://github.com/Ali-Zain-al-Aabdeen) • [MIT License](LICENSE)  
+## 📜 License  
+MIT © [Ali Zain Al-Aabdeen](https://github.com/Ali-Zain-al-Aabdeen)  
