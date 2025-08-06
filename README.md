@@ -4,7 +4,7 @@
 [![Live Website](https://img.shields.io/badge/🌐_Live-alizain--math--reference.github.io-brightgreen?style=flat-square)](https://alizain-math-reference.github.io)  
 [![License](https://img.shields.io/badge/📜_License-MIT-blue?style=flat-square)](LICENSE)  
 
-![Demo](demo.gif)  
+![Preview](preview.png)  
 
 A **responsive math formula hub** with:  
 - 🔍 Instant search  
