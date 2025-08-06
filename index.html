@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathHub - Complete Math Cheat Sheets</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+       <h1 class="main-titleF">MathHub</h1>
+       <p class="main-description">Complete Math Reference with Easy & Hard Examples</p>
+    </div>
+    
+    <div class="container">
+        <div class="tab-container">
+            <div class="search-container">
+                <input type="text" class="search-box" id="searchBox" placeholder="🔍 Search formulas, examples...">
+            </div>
+            
+            <div class="tabs">
+                <button class="tab active" onclick="showTab('algebra')">🔢 Algebra</button>
+                <button class="tab" onclick="showTab('logs')">📈 Logarithms</button>
+                <button class="tab" onclick="showTab('exponents')">⚡ Exponents</button>
+                <button class="tab" onclick="showTab('roots')">√ Roots</button>
+                <button class="tab" onclick="showTab('percentages')">% Percentages</button>
+                <button class="tab" onclick="showTab('financial')">💰 Finance</button>
+                <button class="tab" onclick="showTab('geometry')">📐 Geometry</button>
+                <button class="tab" onclick="showTab('trigonometry')">📏 Trigonometry</button>
+                <button class="tab" onclick="showTab('sets')">📊 Sets</button>
+                <button class="tab" onclick="showTab('statistics')">📈 Statistics</button>
+                <button class="tab" onclick="showTab('ratio-proportion')">⚖ Ratio Proportion</button>
+            </div>
+            
+            <!-- Algebra Tab -->
+            <div id="algebra" class="tab-content active">
+                <div class="grid">
+                    <div class="section">
+                        <h3>🔢 Linear Equations</h3>
+                        <div class="property">
+                            <div class="property-title">Slope-Intercept Form:</div>
+                            <div class="formula">y = mx + b</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> Find y when x = 2 in y = 3x + 1
+                                    <div class="solution">y = 3(2) + 1 = 7</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> Find equation of line through (2,5) and (-1,8)
+                                    <div class="solution-hard">m = (8-5)/(-1-2) = -1, y = -x + 7</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="property">
+                            <div class="property-title">Solving Linear Equations:</div>
+                            <div class="formula">ax + b = c → x = (c - b)/a</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> Solve 2x + 3 = 11
+                                    <div class="solution">x = (11-3)/2 = 4</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> Solve 3(2x-1) - 2(x+4) = 5x - 7
+                                    <div class="solution-hard">6x-3-2x-8 = 5x-7 → x = -4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="section">
+                        <h3>🔄 Quadratic Equations</h3>
+                        <div class="property">
+                            <div class="property-title">Quadratic Formula:</div>
+                            <div class="formula">x = [-b ± √(b² - 4ac)] / 2a</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> Solve x² - 5x + 6 = 0
+                                    <div class="solution">x = (5 ± 1)/2 = 3 or 2</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> Solve 2x² + 3x - 7 = 0
+                                    <div class="solution-hard">x = (-3 ± √65)/4 ≈ 1.27 or -2.77</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="property">
+                            <div class="property-title">Vertex Form:</div>
+                            <div class="formula">y = a(x - h)² + k</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> Find vertex of y = 2(x-3)² + 1
+                                    <div class="solution">Vertex: (3, 1)</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> Convert y = 2x² - 8x + 5 to vertex form
+                                    <div class="solution-hard">y = 2(x-2)² - 3, Vertex: (2,-3)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="section">
+                        <h3>🎯 Factoring</h3>
+                        <div class="property">
+                            <div class="property-title">Difference of Squares:</div>
+                            <div class="formula">a² - b² = (a + b)(a - b)</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> Factor x² - 9
+                                    <div class="solution">(x + 3)(x - 3)</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> Factor 4x² - 25y²
+                                    <div class="solution-hard">(2x + 5y)(2x - 5y)</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="property">
+                            <div class="property-title">Perfect Square Trinomial:</div>
+                            <div class="formula">a² ± 2ab + b² = (a ± b)²</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> Factor x² + 6x + 9
+                                    <div class="solution">(x + 3)²</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> Factor 9x² - 12xy + 4y²
+                                    <div class="solution-hard">(3x - 2y)²</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Logarithms Tab -->
+            <div id="logs" class="tab-content">
+                <div class="grid">
+                    <div class="section">
+                        <h3>🔢 Basic Logarithms</h3>
+                        <div class="property">
+                            <div class="property-title">Definition:</div>
+                            <div class="formula">log<sub>b</sub>(x) = y ⟺ b<sup>y</sup> = x</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> Find log₂(8)
+                                    <div class="solution">log₂(8) = 3 because 2³ = 8</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> Find log₅(√125)
+                                    <div class="solution-hard">log₅(125^(1/2)) = log₅(5³)^(1/2) = 3/2</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="property">
+                            <div class="property-title">Common & Natural Logs:</div>
+                            <div class="formula">log(x) = log₁₀(x), ln(x) = log<sub>e</sub>(x)</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> Find log(1000)
+                                    <div class="solution">log(1000) = 3 because 10³ = 1000</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> Solve ln(2x-1) = 3
+                                    <div class="solution-hard">2x-1 = e³, x = (e³+1)/2 ≈ 10.54</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="section">
+                        <h3>⚡ Log Properties</h3>
+                        <div class="property">
+                            <div class="property-title">Product Rule:</div>
+                            <div class="formula">log(xy) = log(x) + log(y)</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> Simplify log(3) + log(4)
+                                    <div class="solution">log(3×4) = log(12)</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> Simplify log₂(3x) + log₂(4y) - log₂(6)
+                                    <div class="solution-hard">log₂(12xy/6) = log₂(2xy)</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="property">
+                            <div class="property-title">Power Rule:</div>
+                            <div class="formula">log(x<sup>n</sup>) = n·log(x)</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> Simplify log(5²)
+                                    <div class="solution">2·log(5)</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> Solve log(x³) - 3log(2) = 2
+                                    <div class="solution-hard">3log(x) = 2 + log(8), x = 10^((2+log(8))/3)</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="property">
+                            <div class="property-title">Change of Base:</div>
+                            <div class="formula">log<sub>b</sub>(x) = log(x)/log(b)</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> Find log₂(10) using common logs
+                                    <div class="solution">log(10)/log(2) = 1/0.301 ≈ 3.32</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> Solve log₃(x) + log₉(x) = 5
+                                    <div class="solution-hard">log₃(x) + log₃(x)/2 = 5, x = 3^(10/3)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Exponents Tab -->
+            <div id="exponents" class="tab-content">
+                <div class="grid">
+                    <div class="section">
+                        <h3>⚡ Basic Rules</h3>
+                        <div class="property">
+                            <div class="property-title">Product Rule:</div>
+                            <div class="formula">a<sup>m</sup> · a<sup>n</sup> = a<sup>m+n</sup></div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> Simplify 2³ · 2⁴
+                                    <div class="solution">2³⁺⁴ = 2⁷ = 128</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> Simplify (3x²y³)(4x⁴y⁻²)
+                                    <div class="solution-hard">12x⁶y¹ = 12x⁶y</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="property">
+                            <div class="property-title">Power Rule:</div>
+                            <div class="formula">(a<sup>m</sup>)<sup>n</sup> = a<sup>mn</sup></div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> Simplify (3²)³
+                                    <div class="solution">3⁶ = 729</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> Simplify (2x³y⁻²)⁴
+                                    <div class="solution-hard">16x¹²y⁻⁸</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="property">
+                            <div class="property-title">Negative Exponents:</div>
+                            <div class="formula">a<sup>-n</sup> = 1/a<sup>n</sup></div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> Simplify 2⁻³
+                                    <div class="solution">1/2³ = 1/8</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> Simplify (3x⁻²y³)⁻²
+                                    <div class="solution-hard">x⁴/(9y⁶)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="section">
+                        <h3>🔢 Fractional Exponents</h3>
+                        <div class="property">
+                            <div class="property-title">Root Form:</div>
+                            <div class="formula">a<sup>1/n</sup> = ⁿ√a</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> Simplify 8<sup>1/3</sup>
+                                    <div class="solution">³√8 = 2</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> Simplify (27x⁶)^(2/3)
+                                    <div class="solution-hard">(³√27)²(x⁶)^(2/3) = 9x⁴</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="property">
+                            <div class="property-title">Rational Exponents:</div>
+                            <div class="formula">a<sup>m/n</sup> = (ⁿ√a)<sup>m</sup> = ⁿ√(a<sup>m</sup>)</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> Find 4<sup>3/2</sup>
+                                    <div class="solution">(√4)³ = 2³ = 8</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> Simplify (8x⁹)^(2/3)
+                                    <div class="solution-hard">(³√8)²(x⁹)^(2/3) = 4x⁶</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Roots Tab -->
+            <div id="roots" class="tab-content">
+                <div class="grid">
+                    <div class="section">
+                        <h3>√ Basic Operations</h3>
+                        <div class="property">
+                            <div class="property-title">Product Rule:</div>
+                            <div class="formula">√(ab) = √a · √b</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> Simplify √12
+                                    <div class="solution">√(4·3) = 2√3</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> Simplify √(18x³y⁵)
+                                    <div class="solution-hard">3xy²√(2xy)</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="property">
+                            <div class="property-title">Quotient Rule:</div>
+                            <div class="formula">√(a/b) = √a / √b</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> Simplify √(9/4)
+                                    <div class="solution">3/2</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> Rationalize 5/(2√3 - √2)
+                                    <div class="solution-hard">5(2√3 + √2)/10 = (10√3 + 5√2)/10</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="property">
+                            <div class="property-title">Adding Radicals:</div>
+                            <div class="formula">a√c + b√c = (a + b)√c</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> Add 3√5 + 2√5
+                                    <div class="solution">5√5</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> Simplify √48 + √75 - √12
+                                    <div class="solution-hard">4√3 + 5√3 - 2√3 = 7√3</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="section">
+                        <h3>∛ Cube Roots</h3>
+                        <div class="property">
+                            <div class="property-title">Basic Cube Roots:</div>
+                            <div class="formula">∛(x³) = x</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> Find ∛27
+                                    <div class="solution">3</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> Simplify ∛(54x⁷)
+                                    <div class="solution-hard">3x²∛(2x)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Percentages Tab -->
+            <div id="percentages" class="tab-content">
+                <div class="grid">
+                    <div class="section">
+                        <h3>% Basic Calculations</h3>
+                        <div class="property">
+                            <div class="property-title">Percentage of Number:</div>
+                            <div class="formula">x% of n = (x/100) × n</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> Find 25% of 80
+                                    <div class="solution">0.25 × 80 = 20</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> What is 17.5% of 248?
+                                    <div class="solution-hard">0.175 × 248 = 43.4</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="property">
+                            <div class="property-title">Percentage Increase:</div>
+                            <div class="formula">% Change = [(new - old)/old] × 100%</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> Price goes from $40 to $50
+                                    <div class="solution">[(50-40)/40] × 100% = 25% increase</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> Stock drops from $125.60 to $98.75
+                                    <div class="solution-hard">[(98.75-125.60)/125.60] × 100% = -21.35% decrease</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="property">
+                            <div class="property-title">Finding Original Value:</div>
+                            <div class="formula">Original = Final/(1 + % change)</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> $120 after 20% increase. Find original.
+                                    <div class="solution">120/1.20 = $100</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> $85 after 15% discount. Find original.
+                                    <div class="solution-hard">85/0.85 = $100</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="section">
+                        <h3>💰 Tax & Discount</h3>
+                        <div class="property">
+                            <div class="property-title">Sales Tax:</div>
+                            <div class="formula">Total = Price × (1 + tax rate)</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> $50 item with 8% tax
+                                    <div class="solution">$50 × 1.08 = $54</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> Total bill $127.50 with 8.25% tax. Find pre-tax amount.
+                                    <div class="solution-hard">127.50/1.0825 = $117.82</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="property">
+                            <div class="property-title">Compound Discounts:</div>
+                            <div class="formula">Final = Original × (1 - d₁) × (1 - d₂)</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> $100 item, 20% then 10% discount
+                                    <div class="solution">$100 × 0.8 × 0.9 = $72</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> Item $150, get 25% off, then 15% off clearance
+                                    <div class="solution-hard">$150 × 0.75 × 0.85 = $95.63</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Financial Tab -->
+            <div id="financial" class="tab-content">
+                <div class="grid">
+                    <div class="section">
+                        <h3>💰 Simple Interest</h3>
+                        <div class="property">
+                            <div class="property-title">Simple Interest Formula:</div>
+                            <div class="formula">I = Prt, A = P + I = P(1 + rt)</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> $1000 at 5% for 2 years
+                                    <div class="solution">I = 1000 × 0.05 × 2 = $100, A = $1100</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> How long for $750 to earn $225 at 6% annually?
+                                    <div class="solution-hard">225 = 750 × 0.06 × t, t = 5 years</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="section">
+                        <h3>📈 Compound Interest</h3>
+                        <div class="property">
+                            <div class="property-title">Compound Interest:</div>
+                            <div class="formula">A = P(1 + r/n)^(nt)</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> $1000 at 4% compounded annually for 3 years
+                                    <div class="solution">A = 1000(1.04)³ = $1124.86</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> $5000 at 6% compounded quarterly for 8 years
+                                    <div class="solution-hard">A = 5000(1.015)³² = $8072.93</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="property">
+                            <div class="property-title">Continuous Compounding:</div>
+                            <div class="formula">A = Pe^(rt)</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> $2000 at 3% continuously for 5 years
+                                    <div class="solution">A = 2000e^(0.15) ≈ $2323.67</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> How long for $1000 to triple at 7% continuous?
+                                    <div class="solution-hard">3000 = 1000e^(0.07t), t = ln(3)/0.07 ≈ 15.69 years</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="section">
+                        <h3>🏠 Loan Payments</h3>
+                        <div class="property">
+                            <div class="property-title">Monthly Payment Formula:</div>
+                            <div class="formula">PMT = P[r(1+r)^n]/[(1+r)^n - 1]</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> $10,000 loan at 6% for 2 years
+                                    <div class="solution">PMT = 10000[0.005(1.005)²⁴]/[(1.005)²⁴-1] ≈ $443.21</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> $200,000 mortgage at 4.5% for 30 years
+                                    <div class="solution-hard">PMT = 200000[0.00375(1.00375)³⁶⁰]/[(1.00375)³⁶⁰-1] ≈ $1013.37</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Geometry Tab -->
+            <div id="geometry" class="tab-content">
+                <div class="grid">
+                    <div class="section">
+                        <h3>📐 Basic Shapes</h3>
+                        <div class="property">
+                            <div class="property-title">Rectangle:</div>
+                            <div class="formula">Area = lw, Perimeter = 2(l + w)</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> Rectangle 8×5
+                                    <div class="solution">Area = 40, Perimeter = 26</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> Rectangle area 84, length is 3 more than width
+                                    <div class="solution-hard">w(w+3) = 84, w = 9, l = 12</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="property">
+                            <div class="property-title">Circle:</div>
+                            <div class="formula">Area = πr², Circumference = 2πr</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> Circle with radius 3
+                                    <div class="solution">Area = 9π ≈ 28.27, C = 6π ≈ 18.85</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> Circle area 50π, find diameter
+                                    <div class="solution-hard">πr² = 50π, r = 5√2, d = 10√2 ≈ 14.14</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="property">
+                            <div class="property-title">Triangle:</div>
+                            <div class="formula">Area = ½bh</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> Triangle base 10, height 6
+                                    <div class="solution">Area = ½(10)(6) = 30</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> Triangle sides 13, 14, 15. Find area.
+                                    <div class="solution-hard">s = 21, A = √[21(8)(7)(6)] = 84</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="section">
+                        <h3>📦 3D Shapes</h3>
+                        <div class="property">
+                            <div class="property-title">Rectangular Prism:</div>
+                            <div class="formula">Volume = lwh, SA = 2(lw + lh + wh)</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> Box 4×3×2
+                                    <div class="solution">Volume = 24, SA = 52</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> Box volume 120, length twice width, height 5
+                                    <div class="solution-hard">2w²(5) = 120, w = 2√3, l = 4√3</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="property">
+                            <div class="property-title">Sphere:</div>
+                            <div class="formula">Volume = (4/3)πr³, SA = 4πr²</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> Sphere radius 3
+                                    <div class="solution">V = 36π ≈ 113.1, SA = 36π ≈ 113.1</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> Sphere volume 288π, find surface area
+                                    <div class="solution-hard">(4/3)πr³ = 288π, r = 6, SA = 144π</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="section">
+                        <h3>📏 Distance & Midpoint</h3>
+                        <div class="property">
+                            <div class="property-title">Distance Formula:</div>
+                            <div class="formula">d = √[(x₂-x₁)² + (y₂-y₁)²]</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> Distance from (0,0) to (3,4)
+                                    <div class="solution">d = √(9+16) = 5</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> Distance from (-2,5) to (7,-1)
+                                    <div class="solution-hard">d = √[(9)² + (-6)²] = √117 = 3√13</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="property">
+                            <div class="property-title">Midpoint Formula:</div>
+                            <div class="formula">M = ((x₁+x₂)/2, (y₁+y₂)/2)</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> Midpoint of (2,4) and (6,8)
+                                    <div class="solution">M = (4, 6)</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> Midpoint of (-3,7) and (5,-2)
+                                    <div class="solution-hard">M = (1, 2.5)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Trigonometry Tab -->
+            <div id="trigonometry" class="tab-content">
+                <div class="grid">
+                    <div class="section">
+                        <h3>📏 Basic Ratios</h3>
+                        <div class="property">
+                            <div class="property-title">SOH-CAH-TOA:</div>
+                            <div class="formula">sin θ = opp/hyp, cos θ = adj/hyp, tan θ = opp/adj</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> Right triangle: opp=3, adj=4, hyp=5
+                                    <div class="solution">sin θ = 3/5, cos θ = 4/5, tan θ = 3/4</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> Find angle θ if sin θ = 5/13, cos θ > 0
+                                    <div class="solution-hard">cos θ = 12/13, tan θ = 5/12, θ ≈ 22.6°</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="property">
+                            <div class="property-title">Reciprocal Functions:</div>
+                            <div class="formula">csc θ = 1/sin θ, sec θ = 1/cos θ, cot θ = 1/tan θ</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> If sin θ = 1/2, find csc θ
+                                    <div class="solution">csc θ = 2</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> If tan θ = -3/4, θ in QII, find all trig functions
+                                    <div class="solution-hard">sin θ = 3/5, cos θ = -4/5, sec θ = -5/4, csc θ = 5/3, cot θ = -4/3</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="section">
+                        <h3>🎯 Special Angles</h3>
+                        <div class="property">
+                            <div class="property-title">30-60-90 Triangle:</div>
+                            <div class="formula">sides in ratio 1:√3:2</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> Find sin 30°, cos 30°, tan 30°
+                                    <div class="solution">sin 30° = 1/2, cos 30° = √3/2, tan 30° = √3/3</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> Solve: 2sin²θ - sin θ - 1 = 0 for 0° ≤ θ ≤ 360°
+                                    <div class="solution-hard">sin θ = 1 or -1/2, θ = 90°, 210°, 330°</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="property">
+                            <div class="property-title">45-45-90 Triangle:</div>
+                            <div class="formula">sides in ratio 1:1:√2</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> Find sin 45°, cos 45°, tan 45°
+                                    <div class="solution">sin 45° = √2/2, cos 45° = √2/2, tan 45° = 1</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> Find exact value: sin 15°
+                                    <div class="solution-hard">sin 15° = sin(45°-30°) = (√6-√2)/4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="section">
+                        <h3>🔄 Identities</h3>
+                        <div class="property">
+                            <div class="property-title">Pythagorean Identity:</div>
+                            <div class="formula">sin²θ + cos²θ = 1</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> If sin θ = 3/5, find cos θ (θ in QI)
+                                    <div class="solution">cos²θ = 1 - 9/25 = 16/25, cos θ = 4/5</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> Verify: (sin θ + cos θ)² = 1 + 2sin θ cos θ
+                                    <div class="solution-hard">sin²θ + 2sin θ cos θ + cos²θ = 1 + 2sin θ cos θ ✓</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="property">
+                            <div class="property-title">Double Angle Formulas:</div>
+                            <div class="formula">sin 2θ = 2sin θ cos θ, cos 2θ = cos²θ - sin²θ</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> If sin θ = 3/5, cos θ = 4/5, find sin 2θ
+                                    <div class="solution">sin 2θ = 2(3/5)(4/5) = 24/25</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> Solve: cos 2x = cos x for 0 ≤ x ≤ 2π
+                                    <div class="solution-hard">2cos²x - 1 = cos x, x = 0, 2π/3, 4π/3, 2π</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="section">
+                        <h3>📐 Law of Sines & Cosines</h3>
+                        <div class="property">
+                            <div class="property-title">Law of Sines:</div>
+                            <div class="formula">a/sin A = b/sin B = c/sin C</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> Triangle: A=30°, B=60°, a=10. Find b.
+                                    <div class="solution">b = 10 sin 60°/sin 30° = 10√3</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> Triangle: a=8, b=10, A=45°. Find B.
+                                    <div class="solution-hard">sin B = 10 sin 45°/8 = 5√2/8, B ≈ 61.9° or 118.1°</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="property">
+                            <div class="property-title">Law of Cosines:</div>
+                            <div class="formula">c² = a² + b² - 2ab cos C</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> Triangle: a=5, b=7, C=60°. Find c.
+                                    <div class="solution">c² = 25 + 49 - 2(5)(7)(0.5) = 39, c ≈ 6.24</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> Triangle: sides 7, 8, 9. Find largest angle.
+                                    <div class="solution-hard">cos C = (49+64-81)/112 = 32/112, C ≈ 73.4°</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sets Tab -->
+            <div id="sets" class="tab-content">
+                <div class="grid">
+                    <div class="section">
+                        <h3>📊 Basic Set Operations</h3>
+                        <div class="property">
+                            <div class="property-title">Union:</div>
+                            <div class="formula">A ∪ B = {x | x ∈ A or x ∈ B}</div>
+                            <div class="formula">n(A ∪ B) = n(A) + n(B) - n(A ∩ B)</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> A = {1,2,3}, B = {3,4,5}
+                                    <div class="solution">A ∪ B = {1,2,3,4,5}</div>
+                                    <div class="solution">n(A ∪ B) = 3 + 3 - 1 = 5</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> In a survey of 100 students: 60 study Math, 40 study Physics, and 20 study both. How many study at least one subject?
+                                    <div class="solution-hard">n(M ∪ P) = 60 + 40 - 20 = 80 students</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="property">
+                            <div class="property-title">Intersection:</div>
+                            <div class="formula">A ∩ B = {x | x ∈ A and x ∈ B}</div>
+                            <div class="formula">n(A ∩ B) = n(A) + n(B) - n(A ∪ B)</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> A = {1,2,3}, B = {3,4,5}
+                                    <div class="solution">A ∩ B = {3}</div>
+                                    <div class="solution">n(A ∩ B) = 1</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> In a group of 50 people, 30 speak English, 25 speak French, and 10 speak both. How many speak only one language?
+                                    <div class="solution-hard">Only English: 30 - 10 = 20<br>Only French: 25 - 10 = 15<br>Total = 20 + 15 = 35</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="property">
+                            <div class="property-title">Complement:</div>
+                            <div class="formula">A' = {x | x ∉ A}</div>
+                            <div class="formula">n(A') = n(U) - n(A)</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> U = {1,2,3,4,5}, A = {1,2}
+                                    <div class="solution">A' = {3,4,5}</div>
+                                    <div class="solution">n(A') = 5 - 2 = 3</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> In a school of 200 students, 120 play football, 50 play chess, and 30 play both. How many play neither?
+                                    <div class="solution-hard">n(F ∪ C) = 120 + 50 - 30 = 140<br>n(F ∪ C)' = 200 - 140 = 60</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="section">
+                        <h3>🔢 Advanced Set Properties</h3>
+                        <div class="property">
+                            <div class="property-title">De Morgan's Laws:</div>
+                            <div class="formula">(A ∪ B)' = A' ∩ B'</div>
+                            <div class="formula">(A ∩ B)' = A' ∪ B'</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> Verify with A = {1,2}, B = {2,3}, U = {1,2,3,4}
+                                    <div class="solution">(A ∪ B)' = {4} = A' ∩ B' = {3,4} ∩ {1,4} = {4}</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> Prove De Morgan's Law using Venn diagrams
+                                    <div class="solution-hard">Shading (A∪B)' matches shading A'∩B' in all cases</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="property">
+                            <div class="property-title">Three Set Cardinality:</div>
+                            <div class="formula">n(A∪B∪C) = n(A) + n(B) + n(C) - n(A∩B) - n(B∩C) - n(A∩C) + n(A∩B∩C)</div>
+                            <div class="examples">
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> In a survey of 100 people: 60 like Tea, 40 like Coffee, 30 like Milk, 20 like Tea & Coffee, 15 like Coffee & Milk, 10 like Tea & Milk, and 5 like all three. How many like none?
+                                    <div class="solution-hard">n(T∪C∪M) = 60+40+30-20-15-10+5 = 90<br>None = 100 - 90 = 10</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ratio and Proportion Tab -->
+            <div id="ratio-proportion" class="tab-content">
+                <div class="grid">
+                    <div class="section">
+                        <h3>↔ Ratio Basics</h3>
+                        <div class="property">
+                            <div class="property-title">Ratio Definition:</div>
+                            <div class="formula">a : b = a/b</div>
+                            <div class="formula">a : b : c = a/b/c</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> Simplify 15:20
+                                    <div class="solution">15:20 = 3:4 (divided by 5)</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> Divide $1200 in ratio 3:4:5
+                                    <div class="solution-hard">Total parts = 3+4+5 = 12<br>First: (3/12)×1200 = $300<br>Second: (4/12)×1200 = $400<br>Third: (5/12)×1200 = $500</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="section">
+                        <h3>⇨ Direct Proportion</h3>
+                        <div class="property">
+                            <div class="property-title">Direct Proportion:</div>
+                            <div class="formula">y ∝ x ⇒ y = kx</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> If y ∝ x and y=12 when x=4, find y when x=7
+                                    <div class="solution">k = 12/4 = 3 ⇒ y = 3×7 = 21</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> The cost of painting is directly proportional to area. 50m² costs $150. What's the cost for 80m²?
+                                    <div class="solution-hard">k = 150/50 = $3/m² ⇒ Cost = 3×80 = $240</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="section">
+                        <h3>⇦ Inverse Proportion</h3>
+                        <div class="property">
+                            <div class="property-title">Inverse Proportion:</div>
+                            <div class="formula">y ∝ 1/x ⇒ y = k/x</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> If y ∝ 1/x and y=6 when x=4, find y when x=3
+                                    <div class="solution">k = 6×4 = 24 ⇒ y = 24/3 = 8</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> The time to complete a task is inversely proportional to workers. 5 workers take 12 days. How long for 8 workers?
+                                    <div class="solution-hard">k = 5×12 = 60 ⇒ Time = 60/8 = 7.5 days</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="section">
+                        <h3>⇆ Continued Proportion</h3>
+                        <div class="property">
+                            <div class="property-title">Continued Proportion:</div>
+                            <div class="formula">a : b = b : c ⇒ b² = a×c</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> Find mean proportional between 4 and 16
+                                    <div class="solution">x² = 4×16 ⇒ x = 8</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> If a, b, c are in continued proportion and a=9, c=16, find b
+                                    <div class="solution-hard">9 : b = b : 16 ⇒ b² = 144 ⇒ b = 12</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="section">
+                        <h3>⇄ Compound Proportion</h3>
+                        <div class="property">
+                            <div class="property-title">Compound Proportion:</div>
+                            <div class="formula">If a ∝ b and a ∝ 1/c ⇒ a ∝ b/c ⇒ a = k(b/c)</div>
+                            <div class="examples">
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> If 5 workers can build 2 houses in 10 days, how many days will 8 workers take to build 3 houses?
+                                    <div class="solution-hard">Days ∝ Houses/Workers ⇒ 10 = k(2/5) ⇒ k = 25<br>Days = 25×(3/8) = 9.375 days</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- [Rest of your existing tabs remain exactly the same] -->
+        </div>
+    </div>
+
+            <!-- Statistics Tab -->
+            <div id="statistics" class="tab-content">
+                <div class="grid">
+                    <div class="section">
+                        <h3>📈 Descriptive Statistics</h3>
+                        <div class="property">
+                            <div class="property-title">Mean:</div>
+                            <div class="formula">μ = (Σx)/N</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> Data: 5, 7, 9, 11
+                                    <div class="solution">Mean = (5+7+9+11)/4 = 8</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> Weighted mean: Test1(30%, 85), Test2(50%, 92), Final(20%, 78)
+                                    <div class="solution-hard">0.3×85 + 0.5×92 + 0.2×78 = 87.1</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="property">
+                            <div class="property-title">Median:</div>
+                            <div class="formula">Middle value of ordered data</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> Data: 3, 5, 7, 9, 11
+                                    <div class="solution">Median = 7</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> Data: 4, 7, 9, 12, 15, 18
+                                    <div class="solution-hard">Median = (9+12)/2 = 10.5</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="property">
+                            <div class="property-title">Standard Deviation:</div>
+                            <div class="formula">σ = √[Σ(x - μ)²/N]</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> Data: 1, 3, 5 (μ=3)
+                                    <div class="solution">σ = √[(4+0+4)/3] ≈ 1.63</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="section">
+                        <h3>📊 Probability</h3>
+                        <div class="property">
+                            <div class="property-title">Basic Probability:</div>
+                            <div class="formula">P(A) = n(A)/n(S)</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> Die roll, P(odd)
+                                    <div class="solution">3/6 = 0.5</div>
+                                </div>
+                                <div class="example-hard">
+                                    <span class="example-label">Hard:</span> P(A ∪ B) = P(A) + P(B) - P(A ∩ B)
+                                    <div class="solution-hard">If P(A)=0.4, P(B)=0.5, P(A∩B)=0.2, then P(A∪B)=0.7</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="property">
+                            <div class="property-title">Conditional Probability:</div>
+                            <div class="formula">P(A|B) = P(A ∩ B)/P(B)</div>
+                            <div class="examples">
+                                <div class="example-easy">
+                                    <span class="example-label">Easy:</span> P(Rain|Cloudy) = 0.3, P(Cloudy)=0.4, find P(Rain ∩ Cloudy)
+                                    <div class="solution">0.3 × 0.4 = 0.12</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
